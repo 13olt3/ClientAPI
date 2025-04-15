@@ -1,0 +1,44 @@
+body {
+  min-height: 99vh;
+  background-color: rgb(220, 183, 220);
+}
+.wholeForm {
+  background-color: #4db2d1;
+  padding: 10px 50px 10px 50px;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+form {
+  display: flex;
+  padding: 0 0 10px 0;
+  gap: 50px;
+}
+.confirmPW {
+  margin-bottom: 10px;
+}
+form > div > div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-basis: 0;
+  margin-bottom: 10px;
+}
+input {
+  /* width: 17em; */
+  height: 2em;
+  border-radius: 5px;
+}
+input:focus {
+  border: 3px solid blue;
+}
+
+.confirmPW {
+  align-self: flex-end;
+}
+
+input:invalid {
+  border: 2px solid;
+  border-color: rgb(211, 30, 30);
+  outline: none;
+}

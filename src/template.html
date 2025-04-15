@@ -2,10 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Document</title>
   </head>
   <body>
-    <div>Hello World</div>
+    <div class="wholeForm">
+      <form
+        novalidate
+        autocomplete="off"
+      >
+        <div>
+          <div>
+            <label
+              class="formLabel"
+              for="emailInput"
+              >Email address:
+            </label>
+            <input
+              type="email"
+              id="emailInput"
+            />
+          </div>
+          <div>
+            <label for="countryInput">Country: </label>
+            <input
+              type="text"
+              id="countryInput"
+            />
+          </div>
+          <div>
+            <label for="postcodeInput">Postcode (Australian): </label>
+            <input
+              type="number"
+              id="postcodeInput"
+            />
+          </div>
+          <div>
+            <label for="inputPassword">Password (3 or more characters): </label>
+            <input
+              type="password"
+              id="inputPassword"
+              minlength="3"
+            />
+          </div>
+        </div>
+
+        <div class="confirmPW">
+          <label for="confirmPassword">Confirm Password: </label>
+          <input
+            type="password"
+            id="confirmPassword"
+            minlength="3"
+          />
+        </div>
+      </form>
+      <button class="submitButton">Submit</button>
+    </div>
   </body>
 </html>

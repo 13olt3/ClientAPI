@@ -1,0 +1,14 @@
+Put event listener on all fields when exiting the field (blur)
+
+On blur, test if item is valid, if valid, put item into array
+
+On submit, create new array item.
+
+use time stamp ID for item ( when the browser loads, makes a new array object )
+
+HTML elements:
+email
+country
+postal code
+password
+password confirm
